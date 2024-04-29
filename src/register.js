@@ -49,7 +49,8 @@ function registerUser(){
         const user = result.user;
         if(admin){
               console.log('Hello admin');
-              window.location.href ='https://github.com/kmabasa212/sprint/src/admin.html';
+//window.location.href ='https://github.com/kmabasa212/sprint/src/admin.html';
+window.location.href ='https://kmabasa212.github.io/sprint/admin.html'
         }else if(fundManager){
               console.log('Hello FundManager');
               window.location.href ='https://github.com/kmabasa212/sprint/src/fundmanager.html';
