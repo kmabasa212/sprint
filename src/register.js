@@ -13,13 +13,12 @@ import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from
 // Your web app's Firebase configuration
 // For Firebase JS SDK v7.20.0 and later, measurementId is optional
 const firebaseConfig = {
-  apiKey: "AIzaSyDpsbqDksFVO0JpBqZT4gUGa-qW5PDIyVU",
-  authDomain: "funding-requests-management.firebaseapp.com",
-  projectId: "funding-requests-management",
-  storageBucket: "funding-requests-management.appspot.com",
-  messagingSenderId: "663669566432",
-  appId: "1:663669566432:web:d34a19ea3989a6c3ce5985",
-  measurementId: "G-YW4KG1DXWX"
+      apiKey: "AIzaSyD-4HV9w6vG-y6QGrIxgn8F10s7ugLcHYo",
+      authDomain: "login-with-firebase-data-d447f.firebaseapp.com",
+      projectId: "login-with-firebase-data-d447f",
+      storageBucket: "login-with-firebase-data-d447f.appspot.com",
+      messagingSenderId: "972550034552",
+      appId: "1:972550034552:web:2fa6da4f5f6a7825d9098d"
 };
 
 

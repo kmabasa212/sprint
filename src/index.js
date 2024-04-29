@@ -28,7 +28,7 @@ const user = auth.currentUser;
 
 btn_register.addEventListener('click',()=>{
     //After pressing the register button, user is sent to register page
-    window.location.href = 'https://github.com/kmabasa212/sprint.git/register.html';
+    window.location.href = 'https://github.com/kmabasa212/sprint/register.html';
 });
 
 btn_applicant_login.addEventListener('click',()=>{
@@ -60,11 +60,11 @@ function signInUser(){
         const user = result.user;
         //Then take the user to their desired home page
         if(admin){
-            window.location.href ='https://github.com/kmabasa212/sprint.git/admin.html';
+            window.location.href ='https://github.com/kmabasa212/sprint/admin.html';
         }else if(fundManger){
-            window.location.href ='https://github.com/kmabasa212/sprint.git/fundmanager.html';
+            window.location.href ='https://github.com/kmabasa212/sprint/fundmanager.html';
         }else{
-            window.location.href ='https://github.com/kmabasa212/sprint.git/applicant.html';
+            window.location.href ='https://github.com/kmabasa212/sprint/applicant.html';
         }
         
     }).catch((error) => {
@@ -78,7 +78,7 @@ function signInUser(){
 function registerWithEmail(){
     console.log('Hello');
     //get user email
-    email = 'sempapadaniel123@gmail.com';
+    email = 'kmabasa212@gmail.com';
 
     const actionCodeSettings = {
         // URL you want to redirect back to. The domain (www.example.com) for this
