@@ -28,7 +28,7 @@ const user = auth.currentUser;
 
 btn_register.addEventListener('click',()=>{
     //After pressing the register button, user is sent to register page
-    window.location.href = 'https://github.com/kmabasa212/sprint/src/register.html';
+    window.location.href = 'https://kmabasa212.github.io/sprint/register.html';
 });
 
 btn_applicant_login.addEventListener('click',()=>{
@@ -60,11 +60,11 @@ function signInUser(){
         const user = result.user;
         //Then take the user to their desired home page
         if(admin){
-            window.location.href ='https://github.com/kmabasa212/sprint/src/admin.html';
+            window.location.href ='https://kmabasa212.github.io/sprint/admin.html';
         }else if(fundManger){
-            window.location.href ='https://github.com/kmabasa212/sprint/src/fundmanager.html';
+            window.location.href ='https://kmabasa212.github.io/sprint/fundmanager.html';
         }else{
-            window.location.href ='https://github.com/kmabasa212/sprint/src/applicant.html';
+            window.location.href ='https://kmabasa212.github.io/sprint/applicant.html';
         }
         
     }).catch((error) => {
@@ -83,7 +83,7 @@ function registerWithEmail(){
     const actionCodeSettings = {
         // URL you want to redirect back to. The domain (www.example.com) for this
         // URL must be in the authorized domains list in the Firebase Console.
-        url: 'https://github.com/kmabasa212/Google-Verification-test/home.html',
+        url: 'https://kmabasa212.github.io/Google-Verification-test/home.html',
         // This must be true.
         handleCodeInApp: true,
         iOS: {

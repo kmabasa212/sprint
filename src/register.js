@@ -53,10 +53,10 @@ function registerUser(){
 window.location.href ='https://kmabasa212.github.io/sprint/admin.html'
         }else if(fundManager){
               console.log('Hello FundManager');
-              window.location.href ='https://github.com/kmabasa212/sprint/src/fundmanager.html';
+              window.location.href ='https://kmabasa212.github.io/sprint/fundmanager.html';
         }else{
               console.log('Hello Applicant');
-              window.location.href ='https://github.com/kmabasa212/sprint/src/applicant.html';
+              window.location.href ='https://kmabasa212.github.io/sprint/applicant.html';
         }
         
     }).catch((error) => {
