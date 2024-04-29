@@ -49,13 +49,13 @@ function registerUser(){
         const user = result.user;
         if(admin){
               console.log('Hello admin');
-              window.location.href ='https://github.com/kmabasa212/sprint/admin.html';
+              window.location.href ='https://github.com/kmabasa212/sprint/src/admin.html';
         }else if(fundManager){
               console.log('Hello FundManager');
-              window.location.href ='https://github.com/kmabasa212/sprint/fundmanager.html';
+              window.location.href ='https://github.com/kmabasa212/sprint/src/fundmanager.html';
         }else{
               console.log('Hello Applicant');
-              window.location.href ='https://github.com/kmabasa212/sprint/applicant.html';
+              window.location.href ='https://github.com/kmabasa212/sprint/src/applicant.html';
         }
         
     }).catch((error) => {
