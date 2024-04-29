@@ -3,36 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Website Title</title>
+    <title>Funding Request Management</title>
 </head>
 <body>
 
 <header>
     <h1>Funding Request Management</h1>
-    <!-- You can add navigation links or any other content here -->
+    <!-- Navigation links -->
     <nav>
-      <ul>
-          <li><a href="#">About</a></li>
-          <li><a href="#">Register</a></li>
-          <li><a href="#">Login</a></li>
-      </ul>
-  </nav>
+        <ul>
+            <li><a href="#" id="aboutLink">About</a></li>
+            <li><a href="#">Register</a></li>
+            <li><a href="#">Login</a></li>
+        </ul>
+    </nav>
 </header>
 
 <main>
-    <!-- Your main content goes here -->
     <!-- Buttons for user roles -->
-    <button>Applicants</button>
-    <br>
-    <button>Fund Manager</button>
-    <br>
+    <button>Applicants</button><br>
+    <button>Fund Manager</button><br>
     <button>Platform Admin</button>
+    <!-- Your main content goes here -->
+    <p id="aboutContent" style="display: none;">Several organisations like national lotteries and large companies give back to society by funding initiatives and individuals. These funding initiatives range from small amounts for events to large sums for long-running initiatives like bursary and research funds. Some funding initiatives also have a direct benefit to the organisations. In some instances, businesses get marketing exposure, exclusive right or even shares. This project aims to equip the organisations with a central place to advertise all their funding opportunities and manage all the applications they get for funding. This project should cater for at least three types of funding opportunities, namely: Educational (bursaries and scholarships), business, and events.</p>
 </main>
 
 <footer>
     <p>&copy; 2024 Funding Request Management</p>
     <!-- You can add additional footer content here -->
 </footer>
+
+<script>
+    // JavaScript to toggle visibility of aboutContent
+    document.getElementById('aboutLink').addEventListener('click', function(event) {
+        event.preventDefault(); // Prevent the default action of following the link
+        var aboutContent = document.getElementById('aboutContent');
+        if (aboutContent.style.display === 'none') {
+            aboutContent.style.display = 'block';
+        } else {
+            aboutContent.style.display = 'none';
+        }
+    });
+</script>
 
 </body>
 </html>
