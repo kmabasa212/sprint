@@ -1,11 +1,9 @@
-// Import the functions you need from the SDKs you need
-//import { signInWithPopup, getRedirectResult, GoogleAuthProvider , signInWithRedirect, initializeApp, getAuth, sendSignInLinkToEmail, isSignInWithEmailLink, signInWithEmailLink, linkWithCredential, EmailAuthProvider, signOut } from "firebase/app";
-//import { getAnalytics } from "firebase/analytics";
+
 
 import { initializeApp } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-app.js"
-//import { initializeApp } from "./node_modules/firebase/app/firebase-app";
+
 import { getAuth, GoogleAuthProvider, onAuthStateChanged, signInWithPopup } from "https://www.gstatic.com/firebasejs/10.11.0/firebase-auth.js"
-//import { getAuth, GoogleAuthProvider, onAuthStateChanged } from "./node_modules/firebase/app/firebase-auth";
+
 
 // TODO: Add SDKs for Firebase products that you want to use
 // https://firebase.google.com/docs/web/setup#available-libraries
@@ -39,10 +37,10 @@ var applicant = false;
 
 function registerUser(){
     //sign-in using small window prompt
-    console.log('Hello1');
+    console.log('Yello');
     signInWithPopup(auth, provider)
     .then((result) => {
-        console.log('yessir');
+        console.log('Mr');
         // This gives you a Google Access Token. You can use it to access the Google API.
         const credential = GoogleAuthProvider.credentialFromResult(result);
         // The signed-in user info.
