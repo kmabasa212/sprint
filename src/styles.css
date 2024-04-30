@@ -5,15 +5,13 @@ html, body {
 }
 
 body {
-  background-color: red; /* Update background color */
+  background-color:white; /* Update background color */
   display: flex;
   flex-direction: column;
   align-content: space-between;
 }
 
-header {
-  position: fixed;
-}
+
 
 main {
   padding: 40px 0;
