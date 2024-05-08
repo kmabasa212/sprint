@@ -1,4 +1,5 @@
-https://img.shields.io/badge/hello-code-red
+https://img.shields.io/badge/hello-70%25-red
+
 
 
 
