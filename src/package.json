@@ -1,13 +1,13 @@
 {
   "name": "vanilla-basic",
   "version": "1.0.0",
-  "scripts": { 
+  "scripts": {
     "start": "sirv ./src public --cors --single --no-clear --port 8000",
     "test": "mocha",
-    "coverage": "nyc npm test",
+    "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
     "check-coverage": "nyc check-coverage --lines 80 --functions 80 --branches 80"
+  },
+  "devDependencies": {
+    "codecov": "^3.8.3"
   }
-  
-  
-  
 }
