@@ -1,24 +1,20 @@
-name: Update Coverage
-
-on: push
-
+name: Code coverage 
+on: [push, pull_request]
 jobs:
-  update-coverage:
+  run:
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
-      - name: Set up Node.js
-        uses: actions/setup-node@v2
+      - name: Checkout
+        uses: actions/checkout@v4
+      - name: Install google cloud
+        run: npm install --save @google-cloud/storage
+      - name: Set up Node 18
+        uses: actions/setup-node@v3
         with:
-          node-version: '14'
-      - run: npm install axios
-      - run: node update-coverage.js
-      - name: Commit and push changes
-        run: |
-          git config --global user.name 'github-actions[bot]'
-          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
-          git add README.md
-          git commit -m 'Update coverage percentage'
-          git push
+          node-version: 18
+      - name: Install dependencies
+        run: npm install
+      - name: Upload coverage to Codecov
+        uses: codecov/codecov-action@v4
         env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          CODECOV_TOKEN: ${{ secrets.CODECOV_TOKEN }}
