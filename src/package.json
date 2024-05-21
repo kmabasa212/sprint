@@ -2,6 +2,12 @@
   "name": "vanilla-basic",
   "version": "1.0.0",
   "scripts": { 
-    "start": "sirv ./src public --cors --single --no-clear --port 8000"
+    "start": "sirv ./src public --cors --single --no-clear --port 8000",
+    "test": "mocha",
+    "coverage": "nyc npm test",
+    "check-coverage": "nyc check-coverage --lines 80 --functions 80 --branches 80"
   }
+  
+  
+  
 }
