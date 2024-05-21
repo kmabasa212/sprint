@@ -92,6 +92,9 @@ btn_submit_signup.addEventListener('click', ()=>{
     if(userName.value && userEmail.value && userIDNum.value && userReason.value && userRole.value){
         registerUser();
     }
-    //alert('Hello');
+   // alert('');
+   function myFunction() {
+      document.getElementById("demo").innerHTML = "Hello World";
+    }
     
 })
