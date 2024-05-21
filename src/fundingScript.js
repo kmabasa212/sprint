@@ -1,7 +1,11 @@
+import { createFundingOportunity, verifyFundingName } from "../src/funding.js";
+
+
+const email =  window.localStorage.getItem('email');
 const submit = document.getElementById("btn-submit");
 
 function addFunds(addition) {
-    fetch('https://funding-requests-management-dfae31570a7e.herokuapp.com/funds', {
+    fetch('https://victorious-pond-068eb9b03.5.azurestaticapps.net/funds', {
         method: 'POST',
         headers: {
             'Content-Type': 'application/json'
@@ -27,5 +31,7 @@ submit.addEventListener('click', event => {
     const deadline = document.getElementById("app-deadline").value;
     const summary = document.getElementById("more-info").value;
     addFunds({ name, type, estimatedFund, applicantFund, suitable, deadline, summary });
+    createFundingOportunity(name, type, estimatedFund, applicantFund,suitable, deadline,summary, email);
 });
+
 
