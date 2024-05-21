@@ -1,4 +1,4 @@
-https://img.shields.io/badge/hello-70%25-red
+[![codecov](https://codecov.io/github/kmabasa212/sprint/graph/badge.svg?token=ZK36DAITH7)](https://codecov.io/github/kmabasa212/sprint)
 
 
 
