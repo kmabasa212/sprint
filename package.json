@@ -1,19 +1,7 @@
 {
   "name": "vanilla-basic",
   "version": "1.0.0",
-  "scripts": {
-    "start": "sirv ./src public --cors --single --no-clear --port 8000",
-    "test": "jest --coverage",
-    "coverage": "nyc report --reporter=lcov > coverage.lcov && codecov",
-    "check-coverage": "nyc check-coverage --lines 80 --functions 80 --branches 80"
-  },
-  "jest": {
-    "collectCoverage": true,
-    "coverageDirectory": "coverage",
-    "coverageReporters": ["json", "lcov", "text", "clover"]
-  },
-  "devDependencies": {
-    "codecov": "^3.8.3"
+  "scripts": { 
+    "start": "sirv ./src public --cors --single --no-clear --port 8000"
   }
 }
-
